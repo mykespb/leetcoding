@@ -1,11 +1,17 @@
 #!/usr/bin/env python
 # Mikhail Kolodin, 2023
-# 2023-02-06 2023-02-06 1.0
+# 2023-02-06 2023-02-07 1.1
 
 from itertools import combinations
 from math import sqrt
 
 def findtri(xy):
+    print(xy)
+
+    # check if we have enough data
+    if len(xy) < 3:
+        print("no data")
+        return
 
     # to store best result
     best = {'asq': -1, 'atri': None}
@@ -43,9 +49,7 @@ def dist(p1, p2):
 
 def square(a, b, c):
     p = (a + b + c) / 2.
-    # ~ print(f"{p=}")
     s = sqrt( p * (p-a) * (p-b) * (p-c) )
-    # ~ print(f"square={s}")
     return s
    
 
