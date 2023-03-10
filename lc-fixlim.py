@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail (myke) Kolodin, 2023
-# 2023-03-10 2023-03-10 0.1
+# 2023-03-10 2023-03-10 1.0
 
 def solve(arr, minK, maxK):
     """найти количество подмассивов"""
@@ -9,12 +9,10 @@ def solve(arr, minK, maxK):
     nosa = 0        # number of subarrays
 
     for left in range(la):
-        print(f"{left=}")
-        for right in range(left+1, la):
-            print(f"{right=}")
+        for right in range(left+1, la+1):
             if min(arr[left:right]) == minK and max(arr[left:right]) == maxK:
                 nosa += 1
-                print(f"{nosa=}, {left=}, {right=}, arr={arr[left:right]}")
+                # print(f"{nosa=}, {left=}, {right=}, arr={arr[left:right]}")
 
     return nosa
 
@@ -31,7 +29,7 @@ nums = [1, 1, 1, 1]
 minK = 1
 maxK = 1
 
-print(nums, minK, maxK)
+print(f"{nums=}, {minK=}, {maxK=}")
 print("result:", solve(nums, minK, maxK))
 
 
@@ -58,3 +56,9 @@ print("result:", solve(nums, minK, maxK))
 # Вывод: 10
 
 # Замечание. В условии задачи опечатка: надо не max, а maxK.
+
+# myke/pro/leetcoding/lc-fixlim.py 
+# nums=[1, 3, 5, 2, 7, 5], minK=1, maxK=5
+# result: 2
+# nums=[1, 1, 1, 1], minK=1, maxK=1
+# result: 10
