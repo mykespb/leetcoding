@@ -11,9 +11,7 @@ def proc(arr: list[int]) -> list[int]:
     """обработка"""
 
     cnt = Counter(arr)
-    # print(cnt)
     good = [k for k, v in cnt.items() if v==1 ]
-    # print(good)
     return sorted(good)
 
 # testing
