@@ -1,35 +1,35 @@
 #!/usr/bin/env python
 # Mikhail (myke) Kolodin, 2023
-# 2023-03-18 2023-03-18 1.0 OK
+# 2023-03-18 2023-03-18 1.1 OK
 
 from pprint import pp
 
-rows = cols = 0
-
-def filler(arr, sr, sc, color):
+def filler(arr, sr, sc, col):
     """fill all points"""
 
-    global rows, cols
+    global rows, cols, old, color
     rows = len(arr)
     cols = len(arr[0])
+    color = col
+    
     assert sr >= 0 and sr < rows and sc >= 0 and sc < cols and color > 0
 
     old = arr[sr][sc]
-    put(arr, sr, sc, old, color)
+    put(arr, sr, sc)
     
-def put(arr, sr, sc, old, color):
+def put(arr, sr, sc):
     """put 1 point and call others"""
 
     arr[sr][sc] = color
 
     if sr > 0 and arr[sr-1][sc] == old:
-        put(arr, sr-1, sc, old, color)
+        put(arr, sr-1, sc)
     if sr < rows-1 and arr[sr+1][sc] == old:
-        put(arr, sr+1, sc, old, color)
+        put(arr, sr+1, sc)
     if sc > 0 and arr[sr][sc-1] == old:
-        put(arr, sr, sc-1, old, color)
+        put(arr, sr, sc-1)
     if sc < cols-1 and arr[sr][sc+1] == old:
-        put(arr, sr, sc+1, old, color)
+        put(arr, sr, sc+1)
 
 def test(arr, sr, sc, color):
     """print ins and outs tested"""
