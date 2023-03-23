@@ -5,30 +5,44 @@
 
 from dataclasses import dataclass
 
-@dataclass
-class Snake:
-    number: int = 0
-    speed: int = 0
+def carfleet(target: int, position: list[int], speed: list[int]) -> int:
+    pair = [(p, s) for p, s in zip(position, speed)]
+    pair.sort(reverse=True)
+    stack = []
+
+    for p, s in pair:
+        stack.append((target - p) / s)
+        if len(stack) >= 2 and stack[-1] <= stack[-2]:
+            stack.pop()
+    
+    return len(stack)
+
 
 def solve(target, position, speed) -> int:
     """solve 1 task"""
 
+    result = 0
+
     # make road
-    road = [Snake() for _ in range(target)]
-    print(f"{road=}")
+    road = [0 for _ in range(target)]
 
     # make initial state
     for c, s in zip(position, speed):
-        road[c].number += 1
-        road[c].speed = s    # TODO: thnk what is the order of cars
+        road[c] = s    # TODO: thnk what is the order of cars
     print(f"{road=}")
 
     # run simulatuion
-    ...
+    for ind in range(target-1, -1, -1):
+
+        # count who arrived and delete
+        if road[ind] + ind >= target:
+            result += 1
+            road[ind] = 0
+
 
 def test(target, position, speed):
     """make 1 test"""
-    print(f"\ntask: {target=}, {position=}, {speed=}, answer: {solve(target, position, speed)}")
+    print(f"task: {target=}, {position=}, {speed=}, answer: {carfleet(target, position, speed)}\n")
 
 # tests
 test(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3])
