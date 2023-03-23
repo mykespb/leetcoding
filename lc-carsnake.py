@@ -18,28 +18,6 @@ def carfleet(target: int, position: list[int], speed: list[int]) -> int:
     return len(stack)
 
 
-def solve(target, position, speed) -> int:
-    """solve 1 task"""
-
-    result = 0
-
-    # make road
-    road = [0 for _ in range(target)]
-
-    # make initial state
-    for c, s in zip(position, speed):
-        road[c] = s    # TODO: thnk what is the order of cars
-    print(f"{road=}")
-
-    # run simulatuion
-    for ind in range(target-1, -1, -1):
-
-        # count who arrived and delete
-        if road[ind] + ind >= target:
-            result += 1
-            road[ind] = 0
-
-
 def test(target, position, speed):
     """make 1 test"""
     print(f"task: {target=}, {position=}, {speed=}\ncarfleet: {carfleet(target, position, speed)}\n")
