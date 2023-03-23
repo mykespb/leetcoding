@@ -3,8 +3,27 @@
 # 2023-03-23 2023-03-23 0.1 in process
 # lc-carsnake.py
 
+from dataclasses import dataclass
+
+@dataclass
+class Snake:
+    number: int = 0
+    speed: int = 0
+
 def solve(target, position, speed) -> int:
     """solve 1 task"""
+
+    # make road
+    road = [Snake() for _ in range(target)]
+    print(f"{road=}")
+
+    # make initial state
+    for c, s in zip(position, speed):
+        road[c].number += 1
+        road[c].speed = s    # TODO: thnk what is the order of cars
+    print(f"{road=}")
+
+    # run simulatuion
     ...
 
 def test(target, position, speed):
