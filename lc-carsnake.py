@@ -3,8 +3,6 @@
 # 2023-03-23 2023-03-23 0.2 in process
 # lc-carsnake.py
 
-from dataclasses import dataclass
-
 def carfleet(target: int, position: list[int], speed: list[int]) -> int:
     pair = [(p, s) for p, s in zip(position, speed)]
     pair.sort(reverse=True)
@@ -25,6 +23,7 @@ def test(target, position, speed):
 # tests
 test(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3])
 test(10, [3], [3])
+test(10, [1, 2], [30, 1])
 
 
 # Змейка из машин
