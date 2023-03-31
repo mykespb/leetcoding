@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail (myke) Kolodin, 2023
-# 2023-03-18 2023-03-18 1.1 OK
+# 2023-03-31 2023-03-31 1.1 OK
 # lc-submaxprod
 
 import math
