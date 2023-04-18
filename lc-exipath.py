@@ -1,6 +1,6 @@
 #!/usr/bin/enc python
 
-# exipath.py 2023-04-18 2023-04-18 0.1
+# exipath.py 2023-04-18 2023-04-18 1.0
 
 def way(n, edges, source, destination):
     """determine existence of the path"""
@@ -14,10 +14,27 @@ def way(n, edges, source, destination):
         links += [edge[::-1]]
     # print(links)
 
-    weat = source
-    passed = [weat]
+    passed = []
+    que = [source]
 
-    
+    need = True
+    while need:
+        if not que:
+            return False
+        
+        weat = que[0]
+        que = que[1:]
+        passed.append(weat)
+
+        for vert in links:
+            f, t = vert
+            if f != weat or t in passed:
+                continue
+            if t == destination:
+                return True
+            que.append(t)
+
+    return False   
 
 
 # tests
@@ -25,6 +42,8 @@ def way(n, edges, source, destination):
 print( way(3, [[0, 1], [1, 2], [2, 0]], 0, 2) )
 print( way(6, [[0, 1], [0, 2], [3, 5], [5, 4], [4, 3]], 0, 5) )
 
+# True
+# False
 
 # Нахождение существующего пути
 
