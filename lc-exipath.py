@@ -12,7 +12,6 @@ def way(n, edges, source, destination):
     for edge in edges:
         links += [edge]
         links += [edge[::-1]]
-    # print(links)
 
     passed = []
     que = [source]
