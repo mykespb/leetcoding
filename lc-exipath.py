@@ -1,5 +1,6 @@
 #!/usr/bin/enc python
 
+# Mikhail Kolodin, 2023-04-18
 # exipath.py 2023-04-18 2023-04-18 1.0
 
 def way(n, edges, source, destination):
