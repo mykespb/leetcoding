@@ -1,4 +1,4 @@
-#!/usr/bin/enc python
+#!/usr/bin/env python
 
 # Mikhail Kolodin, 2023-04-20
 # halfsame.py 2023-04-20 2023-04-20 1.0

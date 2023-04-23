@@ -1,4 +1,4 @@
-#!/usr/bin/enc python
+#!/usr/bin/env python
 
 # Mikhail Kolodin, 2023-04-18
 # exipath.py 2023-04-18 2023-04-18 1.0
