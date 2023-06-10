@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 # Mikhail Kolodin
-# lc-grupana.py 2023-06-10 2023-06-10 1.0
+# lc-grupana.py 2023-06-10 2023-06-10 1.1
 
 def solve(strs: str) -> list[str]:
     """find groups of anagrams"""
@@ -15,7 +15,7 @@ def solve(strs: str) -> list[str]:
         else:
             res[key] = [s]
 
-    return [v for v in res.values()]
+    return list(res.values())
 
 
 def test(strs: str) -> list[str]:
