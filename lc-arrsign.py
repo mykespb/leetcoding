@@ -1,13 +1,25 @@
 #!/usr/bin/env python
 
 # Mikhail Kolodin
-# lc-arrsign.py 2023-06-15 2023-06-15 1.0
+# lc-arrsign.py 2023-06-15 2023-06-15 1.1
 
 def solve1(arr: list[int]) -> int:
-    """sign of array"""
+    """sign of array, ver,1"""
 
     if 0 in arr: return 0
     return 1 if len( list(filter(lambda x: x<0, arr)) ) % 2 == 0 else -1
+
+def solve2(arr: list[int]) -> int:
+    """sign of array, ver.2"""
+
+    nn = 0
+    for e in arr:
+        if e == 0:
+            return 0
+        if e < 0:
+            nn += 1
+
+    return 1 if nn % 2 == 0 else -1
 
 def signFunc(n: int) -> int:
     """sign -- not used"""
@@ -17,7 +29,7 @@ def signFunc(n: int) -> int:
 def test(arr):
     """print test results"""
 
-    print(f"task: {arr=},\nresult: {solve(arr)}")
+    print(f"task: {arr=},\nresult: {solve2(arr)}")
 
 test([-1, -2, -3, -4, 3, 2, 1])
 test([1, 5, 0, 2, -3])
