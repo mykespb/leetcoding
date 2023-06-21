@@ -7,9 +7,6 @@
 def shares(prices: list[int]) -> int:
     """find bets shares purchase"""
 
-    if len(prices) == 0:
-        return 0
-    
     mv = 0
     for buy in range(len(prices) - 1):
         for sell in range(buy+1, len(prices)):
