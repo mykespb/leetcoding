@@ -1,27 +1,26 @@
 #!/usr/bin/env python
 
 # Mikhail Kolodin
-# lc-flylow.py 2023-07-22 2023-07-22 1.0
+# lc-flylow.py 2023-07-22 2023-07-22 1.1
 
 def solve():
     global bestprice
     
-    flen = len(flights)
-    if n<1 or flen<1 or src<0 or src>=n or dst<0 or dst>=n or k<0 or k>=n:
+    if n<1 or len(flights)<1 or src<0 or src>=n or dst<0 or dst>=n or k<0 or k>=n:
         return -1
     
-    bestprice = None
+    bestprice = -1
 
-    dive(level=0, curnode=src, curprice=0)
+    dive(0, src, 0)
 
-    return bestprice or -1
+    return bestprice
 
 
 def dive(level, curnode, curprice):
     global bestprice
 
     if curnode == dst:
-        if bestprice is None:
+        if bestprice == -1:
             bestprice = curprice
         else:
             if bestprice > curprice:
@@ -62,9 +61,25 @@ dst = 1
 k = 1
 test()
 
+n = 3
+flights = [[0,1,100],[0,2,100]]
+src = 0
+dst = 0
+k = 1
+test()
+
+n = 3
+flights = [[0,1,100],[0,2,100]]
+src = 2
+dst = 2
+k = 1
+test()
+
 # n=4, flights=[[0, 1, 100], [1, 2, 100], [2, 0, 100], [1, 3, 600], [2, 3, 200]], src=0, dst=3, k=1 => 700
 # n=3, flights=[[0, 1, 100], [1, 2, 100], [0, 2, 500]], src=0, dst=2, k=1 => 200
 # n=3, flights=[[0, 1, 100], [0, 2, 100]], src=2, dst=1, k=1 => -1
+# n=3, flights=[[0, 1, 100], [0, 2, 100]], src=0, dst=0, k=1 => 0
+# n=3, flights=[[0, 1, 100], [0, 2, 100]], src=2, dst=2, k=1 => 0
 
 # Перелет с наименьшей ценой
 
