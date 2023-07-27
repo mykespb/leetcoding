@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail Kolodin
-# lc-raspkursov.py 2023-07-27 2023-07-27 1.0
+# lc-raspkursov.py 2023-07-27 2023-07-27 1.1
 
 from itertools import permutations as gen
 
@@ -17,12 +17,15 @@ def solve(numCourses, prerequisites):
         else:
             return tested
 
+    return []
+
 
 def test(numCourses, prerequisites):
     print(f"{numCourses=}, {prerequisites=} => {solve(numCourses, prerequisites)}\n")
 
 test(numCourses = 2, prerequisites = [[1,0]])
 test(numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]])
+test(numCourses = 2, prerequisites = [[1,0], [0,1]])
 
 # numCourses=2, prerequisites=[[1, 0]] => [0, 1]
 
