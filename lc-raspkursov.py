@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail Kolodin
-# lc-raspkursov.py 2023-07-27 2023-07-27 1.1
+# lc-raspkursov.py 2023-07-27 2023-07-27 1.2
 
 from itertools import permutations as gen
 
@@ -30,6 +30,8 @@ test(numCourses = 2, prerequisites = [[1,0], [0,1]])
 # numCourses=2, prerequisites=[[1, 0]] => [0, 1]
 
 # numCourses=4, prerequisites=[[1, 0], [2, 0], [3, 1], [3, 2]] => [0, 1, 2, 3]
+
+# numCourses=2, prerequisites=[[1, 0], [0, 1]] => []
 
 # Расписание курсов
 
