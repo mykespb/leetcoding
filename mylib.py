@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail Kolodin
-# lc-linkedlist.py 2023-07-28 2023-07-28 1.0
+# mylib.py 2023-07-28 2023-07-28 1.1
 
 # Классы LinedList, LinkNode
 
@@ -14,7 +14,7 @@ class LinkedList:
     def __init__(self):
         self.next = None
 
-    def add(self, arr):
+    def addList(self, arr):
         carr = arr.copy()
         while carr:
             self.next = ListNode(carr.pop(), self.next)
@@ -27,7 +27,18 @@ class LinkedList:
             ptr = ptr.next
         print("]")
 
-    def array(self):
+    def __str__(self):
+        ptr = self.next
+        sout = "["
+        while ptr:
+            if len(sout) > 1:
+                sout += ", "
+            sout += str(ptr.val)
+            ptr = ptr.next
+        sout += "]"
+        return sout
+
+    def asList(self):
         ptr = self.next
         arr = []
         while ptr:
