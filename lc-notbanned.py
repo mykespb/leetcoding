@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail Kolodin
-# lc-notbanned.py 2023-08-09 2023-09-09 1.0
+# lc-notbanned.py 2023-08-09 2023-08-09 1.0
 
 from string import ascii_letters as letters
 from collections import Counter
