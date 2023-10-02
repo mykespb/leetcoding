@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # Mikhail Kolodin
-# lc-longones.py 2023-10-01 2023-10-01 1.0
+# lc-longones.py 2023-10-01 2023-10-02 2.0
 
 
-def solve(nums):
+def solve1(nums):
     """solve 1 task"""
 
     ingroup = False
@@ -25,20 +25,28 @@ def solve(nums):
     return maxsum
 
 
+from itertools import groupby
+
+def solve2(nums):
+    """solve 1 task"""
+
+    return max([sum(g) for k, g in groupby(nums) ] )
+
+
 def test(nums):
     """run 1 test"""
 
-    print(f"{nums=} => {solve(nums)}")    
+    print(f"{nums=} => {solve1(nums)}, {solve2(nums)}")    
 
 test(nums = [1,1,0,1,1,1])
 test(nums = [1,1,0,1,1,1, 0, 0])
 test(nums = [1])
 test(nums = [0])
 
-# nums=[1, 1, 0, 1, 1, 1] => 3
-# nums=[1, 1, 0, 1, 1, 1, 0, 0] => 3
-# nums=[1] => 1
-# nums=[0] => 0
+# nums=[1, 1, 0, 1, 1, 1] => 3, 3
+# nums=[1, 1, 0, 1, 1, 1, 0, 0] => 3, 3
+# nums=[1] => 1, 1
+# nums=[0] => 0, 0
 
 
 # Максимальное количество единиц
