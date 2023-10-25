@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail Kolodin
-# mylib.py 2023-07-28 2023-10-25 1.2
+# my-linkedlist.py 2023-07-28 2023-10-25 1.3
 
 # Классы LinkedList, LinkNode
 
