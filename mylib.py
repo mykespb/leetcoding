@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # Mikhail Kolodin
-# mylib.py 2023-07-28 2023-07-28 1.1
+# mylib.py 2023-07-28 2023-10-25 1.2
 
-# Классы LinedList, LinkNode
+# Классы LinkedList, LinkNode
 
 class ListNode:
     def __init__(self, val=None, next=None):
