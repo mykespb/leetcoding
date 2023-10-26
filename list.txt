@@ -1,103 +1,236 @@
 lc-afterpalin.py
+Является ли строка палиндромом 
+https://leetcode.com/problems/valid-palindrome/
+Сложность: Лёгкая
+Условие: палиндромом является фраза, которая после перевода в нижний регистр всех символов, а также удаления всех знаков препинания, читается одинаково как слева направо, так и справа налево. 
+Задача - вернуть true, если строка палиндром, false - в противном случае. 
+
 lc-alien.py
+Чужой язык
+https://leetcode.com/problems/verifying-an-alien-dictionary/
+Сложность: Лёгкая
+Условие задачи: на чужом языке они также используют английские строчные буквы, но, возможно, в другом порядке. Порядок алфавита - это некоторая перестановка строчных букв.
+Учитывая последовательность слов, написанных на чужом языке, и порядок алфавита, верните значение true тогда и только тогда, когда данные слова отсортированы лексикографически на этом чужом языке.
+(1ая версия)
+
 lc-alilingvo.py
+Чужой язык
+https://leetcode.com/problems/verifying-an-alien-dictionary/
+Сложность: Лёгкая
+Условие задачи: на чужом языке они также используют английские строчные буквы, но, возможно, в другом порядке. Порядок алфавита - это некоторая перестановка строчных букв.
+Учитывая последовательность слов, написанных на чужом языке, и порядок алфавита, верните значение true тогда и только тогда, когда данные слова отсортированы лексикографически на этом чужом языке.
+(2ая версия)
+
 lc-allana.py
+Нахождение всех анаграмм в строке
+https://leetcode.com/problems/find-all-anagrams-in-a-string/
+Сложность: Средняя
+Условие задачи: даны две строки s и p, надо вернуть все индексы стартовых позиций, с которых начинаются анаграммы внутри строки s. 
+Анаграмма - строка, составленная путём перестановок букв из какого либо базового набора. 
+
 lc-anklaves.py
+
 lc-arrsign.py
+
 lc-aster.py
+
 lc-biggtri.py
+
 lc-bintreeright.py
+Бинарное дерево с правой стороны
+https://leetcode.com/problems/binary-tree-right-side-view/
+Сложность:  Средняя 
+Условие задачи: на вход подается бинарное дерево, представим, что стоим справа, необходимо вывезти значения, которые будут видны с этой стороны.
+
 lc-carsnake.py
+
 lc-colexcel.py
+
 lc-combieq.py
+
 lc-combsums.py
+
 lc-confhalls.py
+
 lc-countingstr.py
+
 lc-dailytemp.py
+
 lc-delellinked.py
+
 lc-dif1sym.py
+
 lc-dups.py
+
 lc-erasedstr.py
+
 lc-exipath.py
+
 lc-filler.py
+
 lc-find2dim.py
+
 lc-finddup.py
+
 lc-fixlim.py
+
 lc-flowers.py
+
 lc-flylow.py
+
 lc-grupana.py
+
 lc-halfsame.py
+
 lc-harmonicseq.py
+
 lc-hindex.py
+
 lc-icecosts.py
+
 lc-idealnum.py
+
 lc-intersectint.py
+
 lc-islands.py
+
 lc-ispower2.py
+
 lc-izomorf.py
+
 lc-knear0.py
+
 lc-kthmissing.py
+
 lc-kvasort.py
+
 lc-lastlen.py
+
 lc-laststone.py
+
 lc-linearnum.py
+
 lc-list2str.py
+
 lc-listtop.py
+
 lc-longnorept.py
+
 lc-longones.py
+
 lc-longpalin.py
+
 lc-major.py
+
 lc-maxcircle.py
+
 lc-maxmidsub.py
+
 lc-maxprefix.py
+
 lc-maxsubarray.py
+
 lc-maxsubgrow.py
+Количество возрастающих подпоследовательностей наибольшей длины  
+https://leetcode.com/problems/number-of-longest-increasing-subsequence/
+Сложность: Средняя
+Условие задачи: дан массив целых чисел, надо посчитать количество возрастающих подпоследовательностей наибольшей длины. Подпоследовательность (ее элементы) должна строго возрастать.
+
 lc-maxtarget.py
+
 lc-minbigger.py
+
 lc-minbridge.py
+
 lc-mindiff.py
+
 lc-minof69.py
+
 lc-minsumindex.py
+
 lc-mintriangle.py
+
 lc-msga.py
+
 lc-mult2.py
+
 lc-near3sum.py
+
 lc-needle.py
+
 lc-nodups.py
+
 lc-notbanned.py
+
 lc-num2eng.py
+
 lc-oneedit.py
+
 lc-palniuniq.py
+
 lc-parens.py
+
 lc-pathminsum.py
+
 lc-permutations.py
+
 lc-pivotel.py
+
 lc-provinces.py
+
 lc-raspkursov.py
+
 lc-rects1.py
+
 lc-regletters-lists.py
+
 lc-regletters.py
+
 lc-rotarray.py
+
 lc-rotmatplace.py
+
 lc-seqscopes.py
+
 lc-shares.py
+
 lc-shift0s.py
+
 lc-sortcols.py
+
 lc-string-gcd.py
+
 lc-stringgcd.py
+
 lc-subarraymaxavg.py
+
 lc-submaxprod.py
+
 lc-subnondup.py
+
 lc-telecomb.py
+
 lc-toplic.py
+
 lc-townjudge.py
+
 lc-tribonacci.py
+
 lc-tripascal.py
+
 lc-uni2lists.py
+
 lc-unicocc.py
+
 lc-uparray.py
+
 lc-vykup.py
+
 lc-weisum.py
+
 lc-zigzag.py
+
 my-bintree.py
+classes BinTree, BinTreePtr (в работе)
+
 my-linkedlist.py
