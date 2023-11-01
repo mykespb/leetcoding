@@ -30,7 +30,8 @@ print(same("bookeyrskp"))
 
 # Проверка схожести половин строки
 
-#  (https://leetcode.com/problems/determine-if-string-halves-are-alike/)Сложность: Лёгкая 
+#  (https://leetcode.com/problems/determine-if-string-halves-are-alike/)
+# Сложность: Лёгкая 
 
 # Условие задачи: на вход подается строка четной длины. Далее проводится разделение на две равные части.
 

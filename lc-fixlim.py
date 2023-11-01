@@ -35,7 +35,8 @@ print("result:", solve(nums, minK, maxK))
 
 # Подмассив с фиксированными границами
 
-#  (https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/)Сложность: Тяжёлая
+#  (https://leetcode.com/problems/count-subarrays-with-fixed-bounds/description/)
+# Сложность: Тяжёлая
 
 # Условие задачи: дается целочисленный массив nums и два целых числа minK и maxK.
 

@@ -83,7 +83,8 @@ test()
 
 # Перелет с наименьшей ценой
 
-#  (https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)Сложность: Средняя 
+#  (https://leetcode.com/problems/cheapest-flights-within-k-stops/description/)
+# Сложность: Средняя 
 
 # Условие задачи: есть n городов, соединенных некоторым количеством рейсов. Вам предоставляется массив рейсов, где рейсы[i] = [fromi, toi, pricei] указывают, что есть рейс из города из i в город toi со стоимостью pricei.
 
