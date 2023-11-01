@@ -30,7 +30,8 @@ check(7)
 
 # Идеальное число
 
-#  (https://leetcode.com/problems/perfect-number/description/)Сложность: Лёгкая
+#  (https://leetcode.com/problems/perfect-number/description/)
+# Сложность: Лёгкая
 
 # Условие задачи: идеальное число - это положительное целое число, которое равно сумме делителей этого же числа, за исключением самого числа.
 
