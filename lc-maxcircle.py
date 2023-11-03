@@ -55,7 +55,8 @@ test(nums = [5,-3,5])
 
 # Максимальная сумма замкнутого подмассива
 
-#  (https://leetcode.com/problems/maximum-sum-circular-subarray/)Сложность: Средняя 
+#  (https://leetcode.com/problems/maximum-sum-circular-subarray/)
+# Сложность: Средняя 
 
 # Условие задачи: дается круговой целочисленный массив nums длины n, верните максимально возможную сумму непустого подмассива nums.
 

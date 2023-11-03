@@ -39,7 +39,8 @@ test("pwwkew")
 
 # Самая длинная подстрока без повторений
 
-#  (https://leetcode.com/problems/longest-substring-without-repeating-characters/)Сложность: Средняя. 
+#  (https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+# Сложность: Средняя. 
 
 # Условие задачи: дана строка надо найти самую длинную подстроку, в которой не будет повторений. 
 
