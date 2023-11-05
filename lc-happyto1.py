@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail Kolodin
-# lc-happyto1.py 2023-11-04 2023-11-04 1.0
+# lc-happyto1.py 2023-11-04 2023-11-04 1.1
 
 def solve(n: int) -> bool:
     """solve 1 task"""
@@ -9,8 +9,10 @@ def solve(n: int) -> bool:
 
     while n not in was and n != 1:
         was.add(n)
-        digs = map( int, list(str(n)) ) 
-        n = sum( map( lambda x: x*x, digs) )
+        n = sum( map( lambda x: x*x, map( int, list( str(n) ) ) ) )
+
+        # digs = map( int, list(str(n)) ) 
+        # n = sum( map( lambda x: x*x, digs) )
         # print(f"{n=}")
 
     return n == 1
