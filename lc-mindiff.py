@@ -33,7 +33,8 @@ test(root = [1,0,48,null,null,12,49])
 
 # Минимальная разница между узлами бинарного дерева
 
-#  (https://leetcode.com/problems/minimum-distance-between-bst-nodes/)Сложность: Лёгкая
+#  (https://leetcode.com/problems/minimum-distance-between-bst-nodes/)
+# Сложность: Лёгкая
 
 # Условие задачи: дается корень бинарного дерева поиска , верните минимальную разницу между значениями любых двух различных вершин в дереве.
 
