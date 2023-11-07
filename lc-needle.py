@@ -30,7 +30,8 @@ print(needle, haystack, isin(needle, haystack))
 
 # ~ Нахождение индекс первого вхождения в строку
 
- # ~ (https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)Сложность: Средняя 
+ # ~ (https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)
+ # Сложность: Средняя 
 
 # ~ Условие задачи: дается две строки needle и haystack, верните индекс первого появления иглы в стоге сена или -1, если игла не является частью стога сена.
 

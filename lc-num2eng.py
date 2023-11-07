@@ -115,7 +115,8 @@ test(12345)
 
 # Целое число английскими словами
 
-#  (https://leetcode.com/problems/integer-to-english-words/)Сложность задачи: Трудная
+#  (https://leetcode.com/problems/integer-to-english-words/)
+# Сложность задачи: Трудная
 
 # Условие задачи:
 # Преобразуйте неотрицательное целое число num в его представление английскими словами.

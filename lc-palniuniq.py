@@ -40,7 +40,8 @@ test("abc")
 
 # Палиндромная перестановка II
 
-#  (https://leetcode.com/problems/palindrome-permutation-ii/)Сложность задачи: Средняя
+#  (https://leetcode.com/problems/palindrome-permutation-ii/)
+# Сложность задачи: Средняя
 
 # Условие задачи:
 # Дана строка s. Требуется вернуть все ее палиндромные перестановки (без дубликатов).
