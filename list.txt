@@ -526,8 +526,17 @@ lc-pathminsum.py
 Двигаться можно лишь вправо и вниз. 
 
 lc-permutations.py
+Given an array of distinct integers, return all possible permutations
+(in ay order).
+There is itertools.permutations :)
 
 lc-pivotel.py
+Нахождение опорного элемента
+(https://leetcode.com/problems/find-pivot-index/)
+Сложность: Лёгкая 
+Условие задачи: дан массив, состоящий из целых чисел. Необходимо вернуть опорный элемент массива. 
+Опорным называется такое число массива, относительно которого сумма элементов находящихся слева, равна сумме элементов, расположенных справа. 
+Необходимо вернуть индекс самого левого опороного элемента, в случае отсутствия такового - вернуть -1. 
 
 lc-provinces.py
 
