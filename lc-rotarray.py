@@ -24,7 +24,8 @@ print(rotarray([11, 22, 33], -1))
 
 # Сместить (https://leetcode.com/problems/rotate-array/) массив
 
-#  (https://leetcode.com/problems/rotate-array/)Сложность: Средняя
+#  (https://leetcode.com/problems/rotate-array/)
+# Сложность: Средняя
 
 # Условие задачи: дан массив, необходимо сместить массив на k-элементов, где k - неотрицательное число. 
 
