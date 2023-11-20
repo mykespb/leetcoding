@@ -59,7 +59,8 @@ run_tests()
 
 # Наибольший общий делитель строки 
 
-# (https://leetcode.com/problems/greatest-common-divisor-of-strings/)Сложность: Лёгкая 
+# (https://leetcode.com/problems/greatest-common-divisor-of-strings/)
+# Сложность: Лёгкая 
 
 # Условие задачи: для двух строк s и t мы говорим "t делит s" тогда и только тогда, когда s = t + ... + t (т.е. t объединяется с самим собой один или несколько раз).
 
