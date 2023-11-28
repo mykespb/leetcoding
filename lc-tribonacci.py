@@ -98,7 +98,8 @@ test(-1)
 
 # Nое число Трибоначчи
 
-#  (https://leetcode.com/problems/n-th-tribonacci-number/description/)Сложность: Лёгкая 
+#  (https://leetcode.com/problems/n-th-tribonacci-number/description/)
+# Сложность: Лёгкая 
 
 # Условие задачи: последовательность Трибоначчи Tn определяется следующим образом:
 
