@@ -31,7 +31,8 @@ test(2)
 
 # Треугольник Паскаля
 
-#  (https://leetcode.com/problems/pascals-triangle/)Сложность задачи: Легкая
+#  (https://leetcode.com/problems/pascals-triangle/)
+# Сложность задачи: Легкая
 
 # Условие задачи:
 # Дано целое число numRows, верните первые numRows треугольника Паскаля.
