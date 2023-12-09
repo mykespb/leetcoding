@@ -753,3 +753,4 @@ my-bintree.py
 classes BinTree, BinTreePtr (в работе)
 
 my-linkedlist.py
+Классы LinkedList, LinkNode
