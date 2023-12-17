@@ -19,6 +19,7 @@ def solve(temperatures: list[int]) -> list[int]:
 
 def test(temperatures: list[int]) -> None: 
     """ show """
+    
     print(f"{temperatures=} -> {solve(temperatures)}")
 
 
