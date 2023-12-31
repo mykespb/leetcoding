@@ -4,7 +4,7 @@
 # https://leetcode.com/problems/two-sum/
 
 def solve(nums: list[int], target: int) -> list[int]:
-    """find positions with trequired sum"""
+    """find positions with required sum"""
 
     for i in range(len(nums)-1):
         for j in range(i+1, len(nums)):
