@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail (myke) Kolodin, 2023
-# lc-larsubstring-1624.py 2023-12-31 2023-12-31 1.0
+# lc-larsubstring-1624.py 2023-12-31 2023-12-31 2.0
 # https://leetcode.com/problems/largest-substring-between-two-equal-characters/?envType=daily-question&envId=2023-12-31
 
 def solve(s: str) -> int:
@@ -18,9 +18,14 @@ def solve(s: str) -> int:
             return -1
 
     most = -1
+    was = set()
 
     for pl in range(lens-2):
         cl = s[pl]
+
+        if cl in was:
+            continue
+        was.add(cl)
 
         for pr in range(lens-1, pl, -1):
             cr = s[pr]
@@ -43,11 +48,14 @@ test("6")
 test("aa")
 test("abca")
 test("cbzxy")
-s='' -> -1
-s='6' -> -1
-s='aa' -> 0
-s='abca' -> 2
-s='cbzxy' -> -1
+# s='' -> -1
+# s='6' -> -1
+# s='aa' -> 0
+# s='abca' -> 2
+# s='cbzxy' -> -1
+
+# v.1 solved
+# v.2 added optimization with a set
 
 # 1624. Largest Substring Between Two Equal Characters
 # Easy
