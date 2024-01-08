@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail (myke) Kolodin, 2023
-# lc-bulls-cows.py 2024-01-07 2024-01-07 1.0
+# lc-bulls-cows.py 2024-01-07 2024-01-08 1.1
 
 def solve(secret: str, guess: str) -> int:
     """solve 1 task"""
@@ -12,7 +12,6 @@ def solve(secret: str, guess: str) -> int:
     assert len(b) == LEN
 
     bulls = cows = 0 
-    digits = '0123456789'
 
     for i in range(LEN):
         if a[i] == b[i]:
