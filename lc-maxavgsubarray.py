@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail (myke) Kolodin, 2023
-# lc-maxavgsubarray.py 2024-01-11 2024-01-11 1.0
+# lc-maxavgsubarray.py 2024-01-11 2024-01-11 1.1
 
 def solve(nums: list[int], k: int) -> float:
     """solve 1 task"""
@@ -31,7 +31,8 @@ test(nums = [5], k = 1)
 
 # Максимальное среднее подмассива
 
-#  (https://leetcode.com/problems/maximum-average-subarray-i/description/)Сложность: Лёгкая
+# (https://leetcode.com/problems/maximum-average-subarray-i/description/)
+# Сложность: Лёгкая
 
 # Условие задачи: дается целочисленный массив nums, состоящий из n элементов и целого числа k.
 
