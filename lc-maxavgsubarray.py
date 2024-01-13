@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # Mikhail (myke) Kolodin, 2023
-# lc-maxavgsubarray.py 2024-01-11 2024-01-11 1.1
+# lc-maxavgsubarray.py 2024-01-13 2024-01-13 2.0
 
-def solve(nums: list[int], k: int) -> float:
+def solve1(nums: list[int], k: int) -> float:
     """solve 1 task"""
 
     alen = len(nums)
@@ -16,6 +16,25 @@ def solve(nums: list[int], k: int) -> float:
 
     return ms
 
+
+def solve2(nums: list[int], k: int) -> float:
+    """solve 1 task"""
+
+    alen = len(nums)
+    assert alen > 0
+    assert k > 0
+    assert alen >= k
+
+    asum = sum(nums[:k])
+    mdiv =  adiv = asum / k
+    for start in range(1, alen-k):
+        asum = asum - nums[start - 1] + nums[start + k - 1]
+        adiv = asum / k
+        mdiv = max(mdiv, adiv) 
+
+    return mdiv
+
+solve = solve2
 
 def test(nums: list[int], k: int) -> None: 
     """ show """
