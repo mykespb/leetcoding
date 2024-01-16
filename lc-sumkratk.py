@@ -31,7 +31,8 @@ test(nums = [5], k = 9)
 
 # Суммы подмассивов, кратные K
 
-#  (https://leetcode.com/problems/subarray-sums-divisible-by-k/)Сложность: Средняя 
+# (https://leetcode.com/problems/subarray-sums-divisible-by-k/)
+# Сложность: Средняя 
 
 # Условие задачи: дается целочисленный массив nums и целое число k, верните количество непустых подмассивов, сумма которых делится на k.
 
