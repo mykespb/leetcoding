@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # Mikhail Kolodin, 2023
-# 2023-02-04 2023-02-04 1.0
+# 2023-02-04 2023-02-04 1.0 ver.1
 
 def isin(n, h):
     if n not in h:
